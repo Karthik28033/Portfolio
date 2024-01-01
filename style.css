@@ -64,7 +64,7 @@ section{
     transition: .3s;
 }
 
-.navbar a:hover{
+.navbar a:hover, .navbar a.active{
     color: var(--main-color);
 }
 
@@ -602,4 +602,19 @@ width: 35vw;
     }
 }
 
+@media (max-width: 1200px){
+    .container h1{
+        justify-content: center;
+        align-items: center;
+        margin-left:  -40px;
+    }
+    .education-list{
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .contact-details {
+       min-height: 500px;
+    }
+}
 
