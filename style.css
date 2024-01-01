@@ -338,6 +338,8 @@ width: 35vw;
 }
 .container {
     padding: 90px;
+    align-items: center;
+    justify-content: center;
 }
 
 .education-list {
