@@ -616,5 +616,9 @@ width: 35vw;
     .contact-details {
        min-height: 500px;
     }
+    .sub-title span{
+        width: 80%;
+        font-size: 40px;
+    }
 }
 
