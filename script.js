@@ -1,13 +1,15 @@
-/* toggle icon navbar*/
+/*
+
+/* toggle icon navbar 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-};
+}; 
 
-/* scroll sections active link */
+/* scroll sections active link 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -24,21 +26,21 @@ window.onscroll = () => {
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
         };
-    });
-    /* stricky navbar */
+    }); 
+    /* stricky navbar 
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    /* remove toggle icon and navbar when click navbar link (scroll) */
+    /* remove toggle icon and navbar when click navbar link (scroll) 
     menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
+    navbar.classList.remove('active'); 
     
 };
 
-/* scroll reveal */
+/* scroll reveal 
 ScrollReveal({
-    /*reset: true,*/
+    /*reset: true,
     distance: '80px',
     duration: 2000,
     delay: 200
@@ -50,24 +52,32 @@ ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
 
 
+*/
 
+ 
 
-/* 
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function() {
+    header.classList.toggle("sticky", window.scrollY > 120);
+});
 
 let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navbar');
+let navbar = document.querySelector('.navbar');
 
-menu.onclick = () => {
+menu.onclick = () =>{
     menu.classList.toggle('bx-x');
-    navlist.classList.toggle('active');
+    navbar.classList.toggle('active');
 }
 
-window.onscroll = () => {
+window.onscroll = () =>{
     menu.classList.remove('bx-x');
-    navlist.classList.remove('active');
+    navbar.classList.remove('active');
+    
 }
 
-*/
+
+
 
 
 
